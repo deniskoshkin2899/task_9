@@ -9,7 +9,7 @@ document.getElementById("sbmt").onclick = function (e) {
 
 const input = document.querySelector('input');
 
-input.addEventListener('keydown', function (e) {
+input.addEventListener('keyup', function (e) {
 
     let p = document.querySelector('.result')
     p.textContent = e.target.value
