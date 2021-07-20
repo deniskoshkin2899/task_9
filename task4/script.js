@@ -1,12 +1,7 @@
-const smthText = document.querySelector('#smthText');
+const smhText = document.getElementById('smthText');
 
-smthText.addEventListener('click', function() {
-
-let newText = prompt('Введите любое слово или фразу и увидите, как меняется текст ссылки');
-this.textContent = newText;
-
-
+smhText.addEventListener('click', function (event) {
+    newText = prompt('Введите любое слово или фразу и увидите, как меняется текст ссылки');
+    smhText.textContent = newText;
+    event.preventDefault();
 });
-
-
-
